@@ -1,8 +1,8 @@
  body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       color: white;
-      background-color: #008749;
+      background-color: #03522d;
     }
 
     .navbar {
@@ -16,6 +16,7 @@
     .logo {
       font-size: 1.5rem;
       font-weight: bold;
+      
     }
 
     .nav-links {
@@ -108,13 +109,20 @@
       transform: translateY(-5px);
     }
 
+    .detalhes-link { 
+      text-decoration: none;
+      list-style: none;
+      color: #008749;
+      margin-top: 5%;
+    }
+
     .hero-content {
       text-align: center;
       padding: 80px 20px 40px;
     }
 
     .hero-content h2 {
-      font-size: 3rem;
+      font-size: 3.8rem;
     }
 
     .hero-content p {
@@ -187,32 +195,154 @@
     }
 
     @media (max-width: 768px) {
-      .navbar {
-        flex-direction: column;
-        gap: 20px;
-      }
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+  }
 
-      .nav-links {
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-      }
+  .logo {
+    text-align: center;
+    width: 100%;
+    font-size: 1.4rem;
+  }
 
-      .menu-dropdown {
-        flex-direction: column;
-        padding: 30px;
-      }
+  .menu-toggle {
+    display: flex;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 999;
+  }
 
-      .hero-content h2 {
-        font-size: 2rem;
-      }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #03522d;
+    padding: 20px 0;
+    gap: 20px;
+    margin-top: 20px;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    z-index: 998;
+  }
 
-      .carrossel-slide img {
-        width: 90vw;
-        height: auto;
-      }
+  .nav-links.show {
+    display: flex;
+  }
 
-      .bloco-destaque {
-        width: 90%;
-      }
-    }
+  .btn-reserva-top {
+    display: none;
+  }
+}
+
+
+   /* Tablet */
+@media (max-width: 1024px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 15px;
+  }
+
+  .nav-links {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .menu-dropdown {
+    flex-direction: column;
+    padding: 40px 30px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-content h2 {
+    font-size: 2.2rem;
+  }
+
+  .carrossel-slide img {
+    width: 95%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .bloco-destaque {
+    width: 80%;
+  }
+}
+
+/* Celular grande */
+@media (max-width: 768px) {
+  .hero-content h2 {
+    font-size: 1.7rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .btn, .btn-outline {
+    padding: 10px 18px;
+    font-size: 0.9rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .carrossel-slide {
+    gap: 15px;
+  }
+
+  .carrossel-slide img {
+    width: 100%;
+  }
+}
+
+/* Celular pequeno */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 20px 15px;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  .btn-reserva-top {
+    padding: 10px 16px;
+    font-size: 0.85rem;
+  }
+
+  .nav-links { 
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-content h2 {
+    font-size: 1.3rem;
+  }
+
+  .botoes {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .menu-dropdown {
+    padding: 20px;
+  }
+
+  .bloco-destaque {
+    padding: 20px;
+    font-size: 0.95rem;
+  }
+}
