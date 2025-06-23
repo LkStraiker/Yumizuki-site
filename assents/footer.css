@@ -1,0 +1,169 @@
+.footer {
+  background-color: #111;
+  color: #ccc;
+  padding: 60px 20px 30px;
+  font-size: 0.95rem;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.footer-logo p:first-child {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 8px;
+}
+
+.footer-logo p:last-child {
+  max-width: 300px;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.footer h4 {
+  color: white;
+  margin-bottom: 15px;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #ccc;
+  display: block;
+  margin-bottom: 10px;
+  transition: 0.3s ease;
+}
+
+.footer a i {
+  margin-right: 8px;
+}
+
+.footer a:hover {
+  color: #00ff99;
+  transform: scale(1.05);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 30px;
+  border-top: 1px solid #333;
+  margin-top: 40px;
+  color: #777;
+  font-size: 0.85rem;
+}
+
+/* Tablet (até 1024px) */
+@media (max-width: 1024px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .footer-logo p:last-child {
+    max-width: 90%;
+    text-align: center;
+  }
+
+  .footer-links,
+  .footer-contato,
+  .footer-social {
+    width: 100%;
+  }
+}
+
+/* Celular pequeno (até 480px) */
+@media (max-width: 480px) {
+  .footer {
+    padding: 40px 15px 20px;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  .footer-logo p:first-child {
+    font-size: 1.8rem;
+    text-align: center;
+    
+  }
+
+  .footer-logo p:last-child {
+    font-size: 0.85rem;
+  }
+
+  .footer h4 {
+    font-size: 1rem;
+  }
+
+  .footer a {
+    font-size: 0.95rem;
+  }
+
+  .footer-bottom {
+    font-size: 0.75rem;
+  }
+}
+
+
+/* Ícone hambúrguer (oculto por padrão) */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 6px;
+}
+
+.menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background: white;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+
+/* NAVBAR responsiva */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: #03522d;
+    width: 100%;
+    padding: 20px 0;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    z-index: 998;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  .btn-reserva-top {
+    margin-top: 10px;
+  }
+}
+
