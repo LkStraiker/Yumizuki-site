@@ -12,108 +12,92 @@
 </head>
 
 <body>
+
+    <!-- Header -->
     <header class="cabeçalho">
         <nav class="navbar">
             <div class="logo">🍣 Yumizuki</div>
-            <ul class="nav-links">
+
+            <div class="menu-toggle" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="nav-links" id="nav-links">
                 <li><a href="#" id="btn-menu">Menu</a></li>
                 <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#blogue">Blogue</a></li>
-                <li><a href="#ajuda">Ajuda</a></li>
+                <li><a href="#duvidas">Dúvidas</a></li>
+                <li><a href="#footer">Ajuda</a></li>
             </ul>
+
             <a href="#reserva" class="btn-reserva-top">Reserva</a>
         </nav>
 
-
-
-
     </header>
 
-
-    <!-- DROPDOWN MENU -->
+    <!-- Dropdown Menu -->
     <div id="menu-dropdown" class="menu-dropdown oculto">
         <div class="coluna">
             <h3>Especialidades</h3>
             <ul>
-                <li>
-                    <span class="icon">📄</span>
-                    <div class="info">
-                        <strong>Sushi Bar</strong>
+                <li><span class="icon">📄</span>
+                    <div class="info"><strong>Sushi Bar</strong>
                         <p>Sushis frescos, seleção premium.</p>
                     </div>
                 </li>
-                <li>
-                    <span class="icon">📄</span>
-                    <div class="info">
-                        <strong>Pratos Quentes</strong>
+                <li><span class="icon">📄</span>
+                    <div class="info"><strong>Pratos Quentes</strong>
                         <p>Clássicos japoneses refinados.</p>
                     </div>
                 </li>
-                <li>
-                    <span class="icon">📄</span>
-                    <div class="info">
-                        <strong>Combinados</strong>
+                <li><span class="icon">📄</span>
+                    <div class="info"><strong>Combinados</strong>
                         <p>Variedade para compartilhar.</p>
                     </div>
                 </li>
             </ul>
         </div>
-
         <div class="coluna">
             <h3>Reservas</h3>
             <ul>
-                <li>
-                    <span class="icon">📄</span>
-                    <div class="info">
-                        <strong>Reserve uma mesa</strong>
+                <li><span class="icon">📄</span>
+                    <div class="info"><strong>Reserve uma mesa</strong>
                         <p>Garanta seu lugar.</p>
                     </div>
                 </li>
-                <li>
-                    <span class="icon">📄</span>
-                    <div class="info">
-                        <strong>Eventos</strong>
+                <li><span class="icon">📄</span>
+                    <div class="info"><strong>Eventos</strong>
                         <p>Corporativos e sociais.</p>
                     </div>
                 </li>
-                <li>
-                    <span class="icon">📄</span>
-                    <div class="info">
-                        <strong>Entrega</strong>
+                <li><span class="icon">📄</span>
+                    <div class="info"><strong>Entrega</strong>
                         <p>Peça online, receba rápido.</p>
                     </div>
                 </li>
             </ul>
         </div>
-
         <div class="coluna">
             <h3>Sobre</h3>
             <ul>
-                <li>
-                    <span class="icon">📄</span>
-                    <div class="info">
-                        <strong>Nossa história</strong>
+                <li><span class="icon">📄</span>
+                    <div class="info"><strong>Nossa história</strong>
                         <p>Excelência em culinária japonesa.</p>
                     </div>
                 </li>
-                <li>
-                    <span class="icon">📄</span>
-                    <div class="info">
-                        <strong>Equipe</strong>
+                <li><span class="icon">📄</span>
+                    <div class="info"><strong>Equipe</strong>
                         <p>Chefs experientes.</p>
                     </div>
                 </li>
-                <li>
-                    <span class="icon">📄</span>
-                    <div class="info">
-                        <strong>Contato</strong>
+                <li><span class="icon">📄</span>
+                    <div class="info"><strong>Contato</strong>
                         <p>Fale conosco.</p>
                     </div>
                 </li>
             </ul>
         </div>
-
-        <!-- BLOCO PRETO AQUI, FORA DAS COLUNAS -->
         <div class="bloco-destaque">
             <h4>Sabor japonês,<br>padrão elevado</h4>
             <p>Ambiente sofisticado, experiência única.</p>
@@ -121,33 +105,32 @@
         </div>
     </div>
 
-    <section class="hero-content" aria-label="apresentação do restaurante">
+    <!-- Hero Section -->
+    <section class="hero-content reveal" aria-label="apresentação do restaurante">
         <h2>Culinária japonesa requintada,<br />elaborada com maestria</h2>
-        <p>
-            Experiência japonesa autêntica, ingredientes premium e serviço impecável
-            em São Paulo.
-        </p>
+        <p>Experiência japonesa autêntica, ingredientes premium e serviço impecável em São Paulo.</p>
         <div class="botoes">
             <a href="#reserva" class="btn">Reserva</a>
             <a href="#menu" class="btn-outline">Menu</a>
         </div>
     </section>
 
-    <div class="carrossel-wrapper">
+    <!-- Carrossel -->
+    <div class="carrossel-wrapper reveal">
         <div class="carrossel-slide">
             <img src="imagens/fotoyumizuki/restauranteheader.avif" alt="Sushi 1" />
             <img src="imagens/fotoyumizuki/garçom.avif" alt="Sushi 2" />
             <img src="imagens/fotoyumizuki/corredor.avif" alt="Sushi 3" />
-            <!-- duplicar imagens para o loop parecer infinito -->
             <img src="imagens/fotoyumizuki/restauranteheader.avif" alt="Sushi 1" />
             <img src="imagens/fotoyumizuki/garçom.avif" alt="Sushi 2" />
-            <img src="imagens/fotoyumizuki/corredor.avif" alt="Sushi 3" />
+            <img src="imagens//fotoyumizuki/corredor.avif" alt="Sushi 3" />
         </div>
     </div>
 
+    <!-- Main Content -->
     <main class="corpo" id="corpo">
 
-        <section class="destaques">
+        <section class="destaques reveal">
             <div class="destaques-texto">
                 <h2>Refinada gastronomia japonesa,<br> aperfeiçoada</h2>
                 <p>Autêntica culinária japonesa, ingredientes premium e ambiente sofisticado para paladares exigentes.
@@ -156,42 +139,279 @@
 
             <div class="destaques-cards">
                 <div class="card">
-                    <img src="imagens/fotoyumizuki/negiri.avif" alt="foto de um nigiri japones">
+                    <img src="imagens/fotoyumizuki/negiri.avif" alt="foto de um nigiri japones" />
                     <small>Especialidades</small>
                     <h3>Sushi exclusivo artesanal</h3>
                     <p>Peixes frescos, cortes precisos e apresentação impecável. Experiência gastronômica de alta
-                        qualidade</p>
+                        qualidade.</p>
+                    <div class="botoes-card">
+                        <a href="#" class="btn-card">Detalhes</a>
+                        <a href="#" class="btn-card-outline">Reserva</a>
+                    </div>
                 </div>
 
                 <div class="card">
-                    <img src="imagens/fotoyumizuki/prato.avif" alt="foto de um nigiri japones">
+                    <img src="imagens/fotoyumizuki/prato.avif" alt="foto de um prato japonês refinado" />
                     <small>Ambiente</small>
                     <h3>Elegância e conforto</h3>
                     <p>Atmosfera refinada, ideal para negócios ou ocasiões especiais. Atendimento profissional e
                         discreto.</p>
+                    <div class="botoes-card">
+                        <a href="#" class="btn-card">Detalhes</a>
+                        <a href="#" class="btn-card-outline">Reserva</a>
+                    </div>
                 </div>
             </div>
+        </section>
+
+        <!-- Sobre Nós -->
+        <section class="sobre-nos reveal" id="sobre">
+            <div class="sobre-texto">
+                <h2>Refeições japonesas requintadas,<br> servidas com maestria</h2>
+                <p>Cozinha premium, técnicas autênticas, apresentação refinada.</p>
+            </div>
+
+            <div class="cards-sobre">
+                <div class="card-sobre">
+                    <span class="icone">💮</span>
+                    <h3>Sushi de assinatura</h3>
+                    <p>Nigiri, sashimi e rolinhos com peixes selecionados.</p>
+                </div>
+                <div class="card-sobre">
+                    <span class="icone">🍜</span>
+                    <h3>Pratos quentes clássicos</h3>
+                    <p>Tempurá, yakitori e tigelas de arroz, feitos por especialistas.</p>
+                </div>
+                <div class="card-sobre">
+                    <span class="icone">🍶</span>
+                    <h3>Emparelhamentos selecionados</h3>
+                    <p>Saquê, chás e destilados para realçar cada prato.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="galeria-fotos">
+            <img src="imagens/fotoyumizuki/684aec68d4ee055ce6af7655_963d3ca4-2bd3-4cc9-87fb-3a4236fdc607.avif"
+                alt="Foto 4" class="foto diagonal-direita">
+            <img src="imagens/fotoyumizuki/684aec683ff83d7b4c88f387_9e6e1422-0a74-4d34-9649-20aa31d2dcb9.avif"
+                alt="Foto 1" class="foto diagonal-esquerda">
+            <img src="imagens/fotoyumizuki/684aec68f505dacea15b5ef9_ca3e7a80-08fc-4ac9-a44c-e39eb343987d.avif"
+                alt="Foto 2" class="foto diagonal-direita">
+            <img src="imagens/fotoyumizuki/684aec68bdfc318425c5d4d3_13d0ce6d-8d36-49b8-92d1-48cdfce118b8.avif"
+                alt="Foto 3" class="foto diagonal-esquerda">
+            <img src="imagens/fotoyumizuki/684aec689b37145e739e1d84_d15b5278-360e-4666-9839-96d18e88d815.avif"
+                alt="Foto 4" class="foto diagonal-direita">
+            <img src="imagens/fotoyumizuki/684aec688e5e1d594681172d_f43eabde-302d-4361-8894-8ddd7907403b.avif"
+                alt="Foto 4" class="foto diagonal-direita">
+            <img src="imagens/fotoyumizuki/684aec68d4ee055ce6af7655_963d3ca4-2bd3-4cc9-87fb-3a4236fdc607.avif"
+                alt="Foto 4" class="foto diagonal-direita">
+        </section>
+
+
+        <section class="avaliacoes reveal" id="avaliacoes">
+            <span class="avaliacoes-subtitulo">O QUE DIZEM NOSSOS CLIENTES</span>
+            <h2 class="avaliacoes-titulo">Confiança comprovada em cada detalhe</h2>
+
+            <div class="avaliacoes-grid">
+                <div class="avaliacao-card">
+                    <h3>Serviço excepcional</h3>
+                    <p>Equipe eficiente, ambiente refinado e pratos autênticos. Superou todas as expectativas.</p>
+                    <div class="cliente-info">
+                        <img src="imagens/fotoyumizuki/fotohomemoculos.avif" alt="Alex Kimura">
+                        <span>Alex Kimura</span>
+                    </div>
+                </div>
+
+                <div class="avaliacao-card">
+                    <h3>Excelência garantida</h3>
+                    <p>Ingredientes frescos e preparo impecável. Referência em alta gastronomia japonesa.</p>
+                    <div class="cliente-info">
+                        <img src="imagens/fotoyumizuki/fotohomemsentado.avif" alt="Taylor Morita">
+                        <span>Taylor Morita</span>
+                    </div>
+                </div>
+
+                <div class="avaliacao-card">
+                    <h3>Sofisticação e conforto</h3>
+                    <p>Ambiente elegante, ideal para negócios ou ocasiões especiais. Retornarei sem dúvidas.</p>
+                    <div class="cliente-info">
+                        <img src="imagens/fotoyumizuki/fotohomemvermelho.avif" alt="Takeda">
+                        <span>Jordan Takeda</span>
+                    </div>
+                </div>
+
+                <div class=" avaliacao-card">
+                    <h3>Experiência diferenciada</h3>
+                    <p>Atendimento atencioso e pratos surpreendentes do início ao fim.</p>
+                    <div class="cliente-info">
+                        <img src="imagens/fotoyumizuki/fotomenina.avif" alt="selena morgan">
+                        <span>Morgan Shimizu</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <section class="faq reveal" id="duvidas">
+                <p class="faq-subtitulo">PERGUNTAS FREQUENTES</p>
+                <h2 class="faq-titulo">Respostas rápidas para suas dúvidas</h2>
+                <p class="faq-descricao">Informações essenciais sobre reservas e cardápio.</p>
+
+                <div class="faq-lista">
+                    <div class="faq-item">
+                        <h3>Como reservar uma mesa?</h3>
+                        <p>Reserve online ou por telefone. Antecedência recomendada.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Quais menus estão disponíveis?</h3>
+                        <p>Menu à la carte, combinados e opções sazonais.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Atendem restrições alimentares?</h3>
+                        <p>Sim, adaptamos pratos conforme necessidade.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Horário de funcionamento</h3>
+                        <p>Segunda a sábado, 12h às 23h. Domingo fechado.</p>
+                    </div>
+                </div>
+
+                <div class="faq-link">
+                    <a href="#contato">Contato →</a>
+                </div>
+
+
+            </section>
+
+
+            <section class="reserva-section reveal">
+                <div class="reserva-container">
+                    <img src="imagens/fotoyumizuki/684aec688e5e1d594681172d_f43eabde-302d-4361-8894-8ddd7907403b.avif"
+                        alt="Crianças no restaurante">
+                    <div class="reserva-conteudo">
+                        <h2>Reserve sua<br> mesa hoje</h2>
+                        <p>Garanta seu lugar para uma experiência gastronômica única.<br> Faça sua reserva e conheça o
+                            melhor da culinária japonesa refinada em São Paulo.</p>
+                        <div class="reserva-botoes">
+                            <a href="#reserva" class="btn-reservar">Reservar</a>
+                            <a href="#menu" class="btn-vermenu">Ver cardápio</a>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
         </section>
 
 
     </main>
 
-    <!-- SCRIPT PARA DROPDOWN -->
+    <footer class="footer" id="footer">
+        <div class="footer-container">
+
+            <div class="footer-logo">
+                <p>🍣 <strong>Yumizuki</strong></p>
+                <p>Tradição japonesa com um toque contemporâneo. Ingredientes selecionados e uma experiência
+                    inesquecível em cada visita.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#ajuda">Ajuda</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contato">
+                <h4>Contato</h4>
+                <p>São Paulo, SP - Brasil</p>
+                <p>Horário: Segunda a domingo, 12h às 23h</p>
+                <p>Email: <a href="mailto:contato@yumizuki.com.br">contato@yumizuki.com.br</a></p>
+            </div>
+
+            <div class="footer-social">
+                <h4>Redes Sociais</h4>
+                <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a>
+                <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i> Facebook</a>
+                <a href="mailto:contato@yumizuki.com.br"><i class="fa-solid fa-envelope"></i> E-mail</a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 Yumizuki. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+
+    <!-- JavaScript -->
     <script>
-        const btnMenu = document.getElementById('btn-menu');
-        const menuDropdown = document.getElementById('menu-dropdown');
+  // ================== DROPDOWN (Menu principal "Menu") ==================
+  const btnMenu = document.getElementById('btn-menu');
+  const menuDropdown = document.getElementById('menu-dropdown');
 
-        btnMenu.addEventListener('click', function (e) {
-            e.preventDefault();
-            menuDropdown.classList.toggle('oculto');
-        });
+  btnMenu.addEventListener('click', function (e) {
+    e.preventDefault();
+    menuDropdown.classList.toggle('oculto');
+    menuDropdown.classList.toggle('fade-in');
+  });
 
-        document.addEventListener('click', function (event) {
-            if (!menuDropdown.contains(event.target) && !btnMenu.contains(event.target)) {
-                menuDropdown.classList.add('oculto');
-            }
+  document.addEventListener('click', function (event) {
+    if (!menuDropdown.contains(event.target) && !btnMenu.contains(event.target)) {
+      menuDropdown.classList.add('oculto');
+      menuDropdown.classList.remove('fade-in');
+    }
+  });
+
+  // ================== SCROLL ANIMATION (Seções aparecendo) ==================
+  const reveals = document.querySelectorAll('.reveal');
+  function revealOnScroll() {
+    reveals.forEach(function (el) {
+      const windowHeight = window.innerHeight;
+      const revealTop = el.getBoundingClientRect().top;
+      const revealPoint = 150;
+
+      if (revealTop < windowHeight - revealPoint) {
+        el.classList.add('active');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', revealOnScroll);
+  window.addEventListener('load', revealOnScroll);
+
+  // ================== MENU HAMBÚRGUER ==================
+  const toggle = document.getElementById('menu-toggle');
+  const navLinks = document.getElementById('nav-links');
+
+  toggle.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+  });
+
+  // ================== ROLAGEM SUAVE AOS LINKS ==================
+  document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', function (e) {
+      const targetId = this.getAttribute('href');
+      if (targetId === '#' || targetId === '#menu') return;
+
+      const target = document.querySelector(targetId);
+      if (target) {
+        e.preventDefault();
+
+        // Fecha menu hambúrguer ao clicar no link (mobile)
+        navLinks.classList.remove('show');
+
+        // Faz a rolagem suave
+        target.scrollIntoView({
+          behavior: 'smooth'
         });
-    </script>
+      }
+    });
+  });
+</script>
+
 </body>
 
 </html>
