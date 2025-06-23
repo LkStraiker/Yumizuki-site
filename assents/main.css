@@ -1,67 +1,504 @@
-main { 
+main {
     background-color: white;
 }
 
 .destaques {
-      background: white;
-      color: #111;
-      padding: 80px 40px;
-      max-width: 1300px;
-      margin: 0 auto;
-      box-sizing: border-box;
-    }
+    background: white;
+    color: #111;
+    padding: 80px 40px;
+    max-width: 1300px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
 
-    .destaques-texto h2 {
-      font-size: 2.5rem;
-      line-height: 1.2;
-      margin-bottom: 5px;
-    }
+.destaques-texto h2 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: 5px;
+}
 
-    .destaques-texto p {
-      font-size: 1.1rem;
-      color: #000000;
-      font-weight: bold;
-      margin-bottom: 60px;
-      max-width: 700px;
-    }
+.destaques-texto p {
+    font-size: 1.1rem;
+    color: #000000;
+    margin-bottom: 60px;
+    max-width: 700px;
+}
 
-    .destaques-cards {
-      display: flex;
+.destaques-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+.card {
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    flex: 1 1 calc(50% - 20px);
+    max-width: 600px;
+    min-width: 280px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 16px;
+}
+
+.card small {
+    display: block;
+    color: #666;
+    font-size: 0.85rem;
+    margin-top: 20px;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.card p {
+    font-size: 1.2rem;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.botoes-card {
+    display: flex;
+    gap: 12px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.btn-card {
+    background-color: #008749;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-card:hover {
+    background-color: #006e3a;
+}
+
+.btn-card-outline {
+    background: transparent;
+    border: 2px solid #008749;
+    color: #008749;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-card-outline:hover {
+    background-color: #008749;
+    color: white;
+}
+
+.sobre-nos {
+    background-color: white;
+    color: #111;
+    padding: 100px 40px;
+    max-width: 1300px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.sobre-texto h2 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.sobre-texto p {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 60px;
+
+}
+
+.cards-sobre {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card-sobre {
+    background: white;
+    border-radius: 16px;
+    padding: 50px;
+    flex: 1 1 380px;
+    max-width: 500px;
+    border: 1.5px solid black;
+    box-shadow: none;
+    transition: transform 0.3s ease;
+    text-align: start;
+}
+
+.card-sobre:hover {
+    transform: translateY(-5px);
+}
+
+.card-sobre .icone {
+    font-size: 1.8rem;
+    color: #008749;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.card-sobre h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+
+}
+
+.card-sobre p {
+    font-size: 1rem;
+    color: #444;
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.6s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.galeria-fotos {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 25px;
+    margin-top: 300px;
+    padding: 60px 40px;
+    background: white;
+}
+
+.foto {
+    width: 300px;
+    height: auto;
+    border-radius: 16px;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+.diagonal-esquerda { 
+    transform: rotate(-3deg);
+}
+
+.diagonal-direita { 
+    transform: rotate(3deg);
+}
+.foto:hover { 
+    transform: rotate(0deg) scale(1.05);
+}
+
+.avaliacoes {
+  background-color: white;
+  padding: 100px 20px;
+  text-align: center;
+  margin-top: 15%;
+}
+
+.avaliacoes-subtitulo {
+  font-size: 0.85rem;
+  color: #777;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 20%;
+}
+
+.avaliacoes-titulo {
+  font-size: 2rem;
+  margin-top: 10px;
+  margin-bottom: 60px;
+  color: #111;
+}
+
+.avaliacoes-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (max-width: 768px) {
+  .avaliacoes-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.avaliacao-card {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  box-shadow: 0 4px 102px rgba(0, 0, 0, 0.08);
+  padding: 70px;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.avaliacao-card:hover {
+  transform: translateY(-5px);
+}
+
+.avaliacao-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.avaliacao-card p {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.5;
+}
+
+.cliente-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.cliente-info img {
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.cliente-info span {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #222;
+}
+
+.faq {
+  background-color: white;
+  color: #111;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.faq-subtitulo {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  color: #888;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.faq-titulo {
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+}
+
+.faq-descricao {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 60px;
+}
+
+.faq-lista {
+  max-width: 1200px; /* aumentada */
+  margin: 0 auto;
+  text-align: left;
+  padding: 0 10px; /* margem bem pequena para não cortar conteúdo */
+}
+
+.faq-item {
+  padding: 25px 0;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+}
+
+.faq-item:last-child {
+  border-bottom: none;
+}
+
+.faq-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.faq-item p {
+  font-size: 1rem;
+  color: #444;
+}
+
+.faq-link {
+  margin-top: 50px;
+}
+
+.faq-link a {
+  color: #008749;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.faq-link a:hover {
+  transform: scale(1.07); /* efeito de "crescimento" */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* sombra leve */
+}
+
+.reserva-section {
+    background-color: #fff;
+    padding: 80px 40px;
+  }
+
+  .reserva-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    max-width: 1400px;
+    margin: 0 auto;
+    flex-wrap: nowrap;
+  }
+
+  .reserva-container img {
+    width: 60%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  }
+
+  .reserva-conteudo {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .reserva-conteudo h2 {
+    font-size: 2.6rem;
+    color: #111;
+    margin-top: -150px;
+    text-align: left;
+  }
+
+  .reserva-conteudo p {
+    font-size: 1.5rem;
+    color: #444;
+    margin-bottom: 10px;
+    text-align: left;
+    
+  }
+
+  .reserva-botoes {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+
+  .btn-reservar {
+    background-color: #008749;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+
+  .btn-reservar:hover {
+    background-color: #006b3b;
+  }
+
+  .btn-vermenu {
+    background-color: white;
+    color: #008749;
+    border: 2px solid #008749;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.3s;
+  }
+
+  .btn-vermenu:hover {
+    background-color: #008749;
+    color: white;
+  }
+
+   @media (max-width: 1024px) { 
+    .reserva-container{
       flex-wrap: wrap;
       gap: 40px;
+    }
+
+    .reserva-container img { 
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .reserva-conteudo { 
+      width: 100%;
+      align-items: center;
+      text-align: center;
+    }
+
+    .reserva-conteudo h2 { 
+      margin-top: 0;
+      font-size: 2.2rem;
+      text-align: center;
+    }
+
+    .reserva-conteudo p { 
+      font-size: 1.2rem;
+      max-width: 90%;
+    }
+
+    .reserva-botoes{
       justify-content: center;
     }
+   }
 
-    .card {
-      background: #fff;
-      border-radius: 16px;
-      overflow: hidden;
-      flex: 1 1 calc(50% - 20px);
-      max-width: 600px;
-      min-width: 280px;
+   @media (max-width: 600px) { 
+    .reserva-section { 
+      padding: 60px 20px;
     }
 
-    .card img {
-      width: 100%;
-      height: auto;
-      display: block;
-      border-radius: 16px;
+    .reserva-conteudo h2 { 
+      font-size: 1.7rem;
     }
 
-    .card small {
-      display: block;
-      color: #666;
-      font-size: 0.85rem;
-      margin-top: 20px;
+    .reserva-conteudo p { 
+      font-size: 1.1rem;
     }
 
-    .card h3 {
-      font-size: 1.2rem;
-      margin: 10px 0;
+    .btn-reservar, .btn-vermenu { 
+      padding: 10px 20px;
+      font-size: 0.95rem;
     }
 
-    .card p {
-      font-size: 1rem;
-      color: #444;
-      margin-bottom: 20px;
+    .reserva-botoes { 
+      flex-direction: center;
+      gap: 15px;
     }
+   }
